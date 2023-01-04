@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trabalho 3 - Arthur, Artur, Filipe</title>
+
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./html/resources/default.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div id="back-loading">
+        <div id="back-progress">
+            <div id="progress-bar">
+            </div>
+        </div>
+
+        <button id="start-button">
+            START
+        </button>
+    </div>
+
+    <style>
+        #back-loading {
+            width: 100vw;
+            height: 100vh;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #back-progress {
+            width: 300px;
+            height: 40px;
+            background: #222;
+            border: 2px solid #222;
+        }
+
+        #progress-bar {
+            color: white;
+            width: 300px;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            background: green;
+        }
+
+        #start-button {
+            width: 300px;
+            height: 40px;
+            background: green;
+            border: 2px solid green;
+            color: white;
+            display: none;
+        }
+
+        #start-button:hover {
+            box-shadow: 0 0px 8px 0 green;
+            cursor: pointer;
+        }
+
+        #chave-azul {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            left: 20px;
+            display: none;
+        }
+
+        #chave-vermelha {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            left: 70px;
+            display: none;
+        }
+
+        #chave-amarela {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            left: 120px;
+            display: none;
+        }
+
+        #cabo {
+            width: 40px;
+            height: 13px;
+            background-color: blue;
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+        }
+
+        #joystick {
+            pointer-events: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            touch-action: manipulation;
+        }
+    </style>
+
+    <!-- Import maps polyfill -- Remove this when import maps will be widely supported-->
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+            {"imports": {"three": "./build/three.module.js"}} 
+         </script>
+
+    <img id="chave-azul" src="./T3Mobile/assets/chaveAzul.png">
+    <img id="chave-vermelha" src="./T3Mobile/assets/chaveVermelha.png">
+    <img id="chave-amarela" src="./T3Mobile/assets/chaveAmarela.png">
+
+    <div id="joystick"></div>
+    <script src="./libs/other/nipplejs.js"></script>
+
+    <div id="webgl-output">
+        <script type="module" src="./T3Mobile/appMobile.js"></script>
+
+    </div>
+
+</body>
+
+</html>
