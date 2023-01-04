@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls } from '../build/jsm/controls/OrbitControls.js';
+import { OrbitControls } from './build/jsm/controls/OrbitControls.js';
 
 export function moverJogador(bValue, tValue, lValue, rValue, camera, renderer, placeholder, rotateTo, checkColision, boxBB, placelooker, movimentoLateral, directionalLight, mat4) {
 

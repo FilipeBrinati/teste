@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import KeyboardState from '../libs/util/KeyboardState.js'
-import { OrbitControls } from '../build/jsm/controls/OrbitControls.js';
+import KeyboardState from './libs/util/KeyboardState.js'
+import { OrbitControls } from './build/jsm/controls/OrbitControls.js';
 import { keyboardUpdate, moverJogador } from './Teclas.js';
 import { Area2Material, Area3Material, Area4Material, Parede1Material, Parede2Material, Parede3Material, ParedeMaterial, portalMaterial, StartAreaMaterial, tabuaMaterial, underMaterial } from './Texturas.js';
 import {
@@ -13,18 +13,18 @@ import {
     createGroundPlaneXZ,
     createGroundPlaneWired,
     createGroundPlane, radiansToDegrees
-} from "../libs/util/util.js";
-import { MathUtils, MeshLambertMaterial } from '../build/three.module.js';
+} from "./libs/util/util.js";
+import { MathUtils, MeshLambertMaterial } from './build/three.module.js';
 import { Vector2 } from 'three';
-import { Box3, Vector3 } from '../build/three.module.js';
-import { GLTFLoader } from '../build/jsm/loaders/GLTFLoader.js';
-import { OBJLoader } from '../build/jsm/loaders/OBJLoader.js';
-import Stats from '../build/jsm/libs/stats.module.js';
+import { Box3, Vector3 } from './build/three.module.js';
+import { GLTFLoader } from './build/jsm/loaders/GLTFLoader.js';
+import { OBJLoader } from './build/jsm/loaders/OBJLoader.js';
+import Stats from './build/jsm/libs/stats.module.js';
 import Escada from './Escada.js';
-import { CSG } from '../libs/other/CSGMesh.js'
-import { FontLoader } from '../build/jsm/loaders/FontLoader.js';
-import { TextGeometry } from '../build/jsm/geometries/TextGeometry.js';
-import GUI from '../libs/util/dat.gui.module.js';
+import { CSG } from './libs/other/CSGMesh.js'
+import { FontLoader } from './build/jsm/loaders/FontLoader.js';
+import { TextGeometry } from './build/jsm/geometries/TextGeometry.js';
+import GUI from './libs/util/dat.gui.module.js';
 var stats = new Stats();
 var clock = new THREE.Clock();
 
