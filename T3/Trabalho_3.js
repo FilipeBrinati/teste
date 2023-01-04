@@ -499,7 +499,6 @@ scene.add(escada0to1.mesh)
 function andarEscadas(coordenada, subida, escada, max, min, velocidade = 0.25)
 {
   let light = directionalLight.intensity;
-  console.log(light);
   let y = placeholder.getWorldPosition(new THREE.Vector3()).y
   let dir = placelooker.getWorldDirection(new THREE.Vector3())
   let verificaSubida = coordenada == "x" && subida == "-" ? dir.x < 0 :
