@@ -442,7 +442,7 @@ var playAction = true;
 
 //Criar parecidos para mais animações,
 //Deve ter uma forma mais eficiente para caso de diferentes animações.
-loadGLTFFile('../assets/objects/walkingMan.glb');
+loadGLTFFile('./assets/objects/walkingMan.glb');
 
 function loadGLTFFile(modelName) {
     loader.load(modelName, function (gltf) {
