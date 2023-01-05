@@ -112,7 +112,7 @@ let canPlayEnd = true;
 
 
 function playEndGame() {
-    if (doors[2].userData.open == 1 && canPlayEnd && placeholder.position.z < -22) {
+    if (doors[2].userData.open == 1 && canPlayEnd) {
         somFim.play();
         canPlayEnd = false
     }
